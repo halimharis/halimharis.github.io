@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'blackbrown': '#1E212D',
+        'blackbrown': '#1c1512',
         'darkbrown': '#B68973',
         'lightbrown': '#EABF9F',
         'whitebrown': '#FAF3E0',
@@ -21,5 +21,12 @@ module.exports = {
       }
     },
   },
-  plugins: [],
-}
+  variants:{
+    extend:{
+      lineClamp: ['hover']
+    },
+  },
+  plugins: [
+    require('@tailwindcss/line-clamp'),
+  ],
+};

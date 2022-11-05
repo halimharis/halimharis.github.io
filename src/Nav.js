@@ -2,7 +2,7 @@ import NavItem from "./NavItem";
 
 function Nav(){
     return(
-        <nav className="py-4 flex justify-between">
+        <nav className="py-4 flex justify-between items-center">
             <span className="text-lg text-blackbrown font-black font-coba uppercase">Halim</span>
             <div className="flex">
                 <NavItem namaItem="About Me"/>
