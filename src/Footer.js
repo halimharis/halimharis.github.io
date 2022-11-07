@@ -5,7 +5,7 @@ import { AiOutlineLinkedin } from 'react-icons/ai'
 
 function Footer(){
     return(
-        <nav className="py-4 mb-8 flex justify-between items-center">
+        <nav className="py-4 mb-8 flex flex-col sm:flex-row space-y-12 sm:space-y-0 justify-between items-center">
             <span className="text-lg text-blackbrown font-semibold font-coba">Created by Me</span>
             <div className="flex space-x-4">
                 <a href="" className='text-4xl hover:text-darkbrown'><AiOutlineFacebook/></a>
@@ -18,4 +18,4 @@ function Footer(){
 }
 
 
-export default Footer;
+export default Footer;  
