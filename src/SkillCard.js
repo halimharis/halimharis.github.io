@@ -2,7 +2,7 @@ import { type } from "@testing-library/user-event/dist/type";
 
 function SkillCard({Logo, Judul, Desc, Tools}){
     return(
-        <div className="flex flex-col bg-darkbrown w-4/5 sm:w-2/6 items-center pt-8 sm:pt-16 pb-16 rounded-xl">
+        <div className="flex flex-col bg-darkbrown w-4/5 xl:w-2/6 items-center pt-8 sm:pt-16 pb-16 rounded-xl">
             <div className="flex flex-col sm:flex-row items-center justify-center mb-4">
                 <img src={Logo}/>
                 <h2 className="font-coba font-bold text-xl">{Judul}</h2>
