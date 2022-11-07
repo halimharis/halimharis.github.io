@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portofolio/static/css/main.e1c32730.css",
-    "main.js": "/portofolio/static/js/main.7f4f4195.js",
+    "main.css": "/portofolio/static/css/main.640fb6fe.css",
+    "main.js": "/portofolio/static/js/main.28e5c598.js",
     "static/media/UndrawLogo.png": "/portofolio/static/media/UndrawLogo.73c34758c2004f01b78c.png",
     "static/media/FigjamLogo.png": "/portofolio/static/media/FigjamLogo.74a79ed5a0f535dc2bc7.png",
     "static/media/testing.jpg": "/portofolio/static/media/testing.202f99e8ab641379770e.jpg",
@@ -13,11 +13,11 @@
     "static/media/reactLogo.png": "/portofolio/static/media/reactLogo.ef20e673b9282f8f30fd.png",
     "static/media/JSlogo.png": "/portofolio/static/media/JSlogo.266bd9fb2663dcc057b4.png",
     "index.html": "/portofolio/index.html",
-    "main.e1c32730.css.map": "/portofolio/static/css/main.e1c32730.css.map",
-    "main.7f4f4195.js.map": "/portofolio/static/js/main.7f4f4195.js.map"
+    "main.640fb6fe.css.map": "/portofolio/static/css/main.640fb6fe.css.map",
+    "main.28e5c598.js.map": "/portofolio/static/js/main.28e5c598.js.map"
   },
   "entrypoints": [
-    "static/css/main.e1c32730.css",
-    "static/js/main.7f4f4195.js"
+    "static/css/main.640fb6fe.css",
+    "static/js/main.28e5c598.js"
   ]
 }
