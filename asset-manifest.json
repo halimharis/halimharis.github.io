@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/portofolio/static/css/main.40613f3e.css",
-    "main.js": "/portofolio/static/js/main.85f42f30.js",
+    "main.css": "/portofolio/static/css/main.bbb59f1d.css",
+    "main.js": "/portofolio/static/js/main.22cf54ee.js",
     "static/media/UndrawLogo.png": "/portofolio/static/media/UndrawLogo.73c34758c2004f01b78c.png",
     "static/media/FigjamLogo.png": "/portofolio/static/media/FigjamLogo.74a79ed5a0f535dc2bc7.png",
     "static/media/testing.jpg": "/portofolio/static/media/testing.202f99e8ab641379770e.jpg",
     "static/media/Profile_Icon.png": "/portofolio/static/media/Profile_Icon.e610b221006e7af75af1.png",
+    "static/media/mailbox.png": "/portofolio/static/media/mailbox.26d26679d6f0fa1cab69.png",
     "static/media/Profile_Icon2.png": "/portofolio/static/media/Profile_Icon2.cfcd5031a250b4fda3cb.png",
     "static/media/tailwindlogo.png": "/portofolio/static/media/tailwindlogo.5411208dd7bb9722460d.png",
     "static/media/FontAwesomeLogo.png": "/portofolio/static/media/FontAwesomeLogo.8caa2dab96549a0a7653.png",
@@ -13,11 +14,11 @@
     "static/media/reactLogo.png": "/portofolio/static/media/reactLogo.ef20e673b9282f8f30fd.png",
     "static/media/JSlogo.png": "/portofolio/static/media/JSlogo.266bd9fb2663dcc057b4.png",
     "index.html": "/portofolio/index.html",
-    "main.40613f3e.css.map": "/portofolio/static/css/main.40613f3e.css.map",
-    "main.85f42f30.js.map": "/portofolio/static/js/main.85f42f30.js.map"
+    "main.bbb59f1d.css.map": "/portofolio/static/css/main.bbb59f1d.css.map",
+    "main.22cf54ee.js.map": "/portofolio/static/js/main.22cf54ee.js.map"
   },
   "entrypoints": [
-    "static/css/main.40613f3e.css",
-    "static/js/main.85f42f30.js"
+    "static/css/main.bbb59f1d.css",
+    "static/js/main.22cf54ee.js"
   ]
 }
