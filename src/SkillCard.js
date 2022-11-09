@@ -1,22 +1,20 @@
-import { type } from "@testing-library/user-event/dist/type";
-
-function SkillCard({Logo, Judul, Desc, Tools}){
-    return(
-        <div className="flex flex-col bg-darkbrown w-4/5 xl:w-2/6 items-center pt-8 sm:pt-16 pb-16 rounded-xl">
-            <div className="flex flex-col sm:flex-row items-center justify-center mb-4">
-                <img src={Logo}/>
-                <h2 className="font-coba font-bold text-xl">{Judul}</h2>
-            </div>
-            <p className="text-center px-8 sm:px-16 font-coba pb-16 ">{Desc}</p>
-            <span className="font-black font-coba mx-4 sm:mx-0 sm:text-lg text-center">TOOLS YANG DIGUNAKAN</span>
-            <div className="grid grid-cols-2 gap-4 mt-8 px-4 sm:mx-0">
-                {Tools.map((tool,index)=>{
-                    return <img className="rounded-md h-16" key={index} src={tool} />
-                })}
-            </div>
-            {/* map buat tampilin tools */}
-        </div>
-    );
+function SkillCard({ Logo, Judul, Desc, Tools }) {
+  return (
+    <div className="bg-darkbrown rounded-xl flex flex-col items-center p-8 space-y-8 max-w-[26rem]">
+      <div className="flex flex-col gap-4 items-center">
+        <img alt="" src={Logo} />
+        <h2 className="font-extrabold text-xl">{Judul}</h2>
+      </div>
+      <p className="text-center text-lg">{Desc}</p>
+      <div className="flex flex-wrap justify-center gap-2 py-8">
+        {Tools.map((tool, index) => {
+          return (
+            <img alt="" className="h-20 rounded-lg" key={index} src={tool} />
+          );
+        })}
+      </div>
+    </div>
+  );
 }
 
 export default SkillCard;

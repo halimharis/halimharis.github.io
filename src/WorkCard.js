@@ -1,14 +1,18 @@
-function WorkCard({Judul, Desc, BackgroundImage}){
-    return(
-        <div className={`relative overflow-hidden flex flex-col border bg-darkbrown p-8 sm:p-12 justify-between rounded-xl ${BackgroundImage} bg-cover group`}>
-            <div className="hidden group-hover:block w-full h-full bg-blackbrown opacity-95 z-0 top-0 right-0 absolute"></div>
-            <div className="hidden group-hover:block z-10">
-                <h2 className="font-bold font-coba text-lightbrown z-10 text-lg">{Judul}</h2>
-                <p className="group-hover:line-clamp-2 sm:group-hover:line-clamp-5 text-whitebrown z-10">{Desc}</p>
-            </div>
-            <button className="hidden border w-max px-4 py-1 self-end mt-8 group-hover:block font-coba text-whitebrown z-10 rounded-xl hover:bg-darkbrown hover:border-darkbrown">View Work</button>
-        </div>
-    );
+function WorkCard({ Judul, Desc, BackgroundImage }) {
+  return (
+    <div
+      className={`group ${BackgroundImage} p-8 flex flex-col rounded-xl relative bg-cover min-w-fit max-w-xs text-whitebrown overflow-hidden`}
+    >
+      <div className="absolute hidden group-hover:block bg-blackbrown h-full w-full top-0 left-0 z-0"></div>
+      <div className="opacity-0 group-hover:opacity-100 mb-12 z-10">
+        <h2 className="text-lg">{Judul}</h2>
+        <p className=" line-clamp-6">{Desc}</p>
+      </div>
+      <button className="opacity-0 group-hover:opacity-100 w-max self-end z-10 hover:font-bold">
+        View Work
+      </button>
+    </div>
+  );
 }
 
 export default WorkCard;

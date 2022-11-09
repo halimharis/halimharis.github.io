@@ -6,7 +6,7 @@ import ContactMe from "./ContactMe";
 
 function App() {
   return (
-    <main className="bg-whitebrown sm:px-16 lg:px-32 xl:px-60 flex flex-col px-0 min-h-[100vh]">
+    <main className="font-coba bg-whitebrown flex flex-col items-center relative">
       <Nav />
       <Routes>
         <Route path="/portofolio/" element={<Home />} />

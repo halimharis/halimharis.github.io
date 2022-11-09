@@ -5,21 +5,19 @@ import { AiOutlineLinkedin } from "react-icons/ai";
 
 function Footer() {
   return (
-    <nav className="py-4 mb-8 flex flex-col sm:flex-row space-y-12 sm:space-y-0 justify-between items-center w-full">
-      <span className="text-lg text-blackbrown font-semibold font-coba">
-        Created by Me
-      </span>
-      <div className="flex space-x-4">
-        <a href="" className="text-4xl hover:text-darkbrown">
+    <nav className="flex items-center mt-24 lg:mt-36 mb-12 w-full px-8 justify-between text-lg max-w-screen-lg">
+      <span className="font-bold lg:text-xl">Created by Me</span>
+      <div className="flex gap-4 text-3xl">
+        <a href="/portofolio" className="hover:text-darkbrown">
           <AiOutlineFacebook />
         </a>
-        <a href="" className="text-4xl hover:text-darkbrown">
+        <a href="/portofolio" className="hover:text-darkbrown">
           <AiOutlineInstagram />
         </a>
-        <a href="" className="text-4xl hover:text-darkbrown">
+        <a href="/portofolio" className="hover:text-darkbrown">
           <AiOutlineWhatsApp />
         </a>
-        <a href="" className="text-4xl hover:text-darkbrown">
+        <a href="/portofolio" className="hover:text-darkbrown">
           <AiOutlineLinkedin />
         </a>
       </div>
