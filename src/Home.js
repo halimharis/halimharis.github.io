@@ -10,7 +10,7 @@ function Home() {
   var testingImage = "bg-[url('./images/testing.jpg')]";
   return (
     <>
-      <div className="min-h-screen flex flex-col justify-center items-center space-y-24 max-w-screen-lg px-8">
+      <div className="min-h-screen flex flex-col justify-center items-center space-y-24 max-w-screen-lg px-4 sm:px-8">
         <Penjelasan
           judul="Designer sekaligus coder"
           isi={
@@ -29,7 +29,7 @@ function Home() {
           judul="Halo Semuanya~"
           isi="Namaku adalah Abdul Haris Halim, biasanya teman temanku memanggilku Halim. Aku adalah seorang Mahasiswa yang sedang menjalani kuliah di Universitas Brawijaya, beberapa skill yang kupunya adalah desain dan front-end website developer"
         />
-        <div className="mt-24 flex flex-col lg:flex-row px-12 gap-8 justify-center items-center">
+        <div className="mt-24 flex flex-col md:flex-row px-12 gap-12 justify-center items-center">
           <SkillCard
             Tools={[
               images["FigjamLogo.png"],
@@ -58,7 +58,7 @@ function Home() {
           judul="Hasil Kerjaku Sampai Saat ini"
           isi="Dibawah ini adalah hasil kerjaku sejak aku mulai mempelajari design dan front-end website developer di Universitas Brawija, beberapa project berasal dari kepanitiaan yang kujalani dan project akhir pelajaran yang kupelajari"
         />
-        <div className="mt-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mx-12 gap-4   ">
+        <div className="mt-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mx-12 gap-8   ">
           <WorkCard
             Judul="Ini Judul"
             Desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
