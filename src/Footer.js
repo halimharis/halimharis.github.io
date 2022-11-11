@@ -5,7 +5,7 @@ import { AiOutlineLinkedin } from "react-icons/ai";
 
 function Footer() {
   return (
-    <nav className="flex flex-col sm:flex-row gap-y-8 items-center mb-12 w-full justify-between text-lg max-w-screen-lg">
+    <nav className="flex flex-col sm:flex-row gap-y-8 items-center px-8 mb-12 w-full justify-between text-lg max-w-screen-lg">
       <span className="font-bold lg:text-xl">Created by Me</span>
       <div className="flex gap-4 text-3xl">
         <a href="/portofolio" className="hover:text-darkbrown">

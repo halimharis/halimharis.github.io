@@ -34,7 +34,7 @@ function FormContactMe() {
   }
 
   return (
-    <div className="flex flex-col lg:flex-row lg:items-center mx-8 md:mx-32 lg:mx-0 h-full">
+    <div className="flex flex-col lg:flex-row lg:items-center mx-8 md:mx-32 lg:mx-0 h-full px-4 sm:px-8">
       <div className="flex flex-col text-xl font-black pb-12 lg:pb-0 lg:w-3/5">
         <h1 className="lg:text-left lg:text-2xl text-center">
           How Can I Help You Today?
