@@ -87,7 +87,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="mt-36 flex flex-col items-center gap-8 lg:gap-16">
+      <section className="my-36 flex flex-col items-center gap-8 lg:gap-16">
         <PenjelasanKecil
           isi="Aku selalu tertarik untuk bekerja dibidangku dimanapun itu, apabila
             aku dapat membantu hubungi saja langsung dengan email ataupun kontak

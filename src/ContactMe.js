@@ -3,11 +3,9 @@ import FormContactMe from "./FormContactMe";
 
 function ContactMe() {
   return (
-    <div className="bg-whitebrown">
-      <div className="w-full flex flex-col items-center pt-12">
-        <FormContactMe />
-        <Footer />
-      </div>
+    <div className="flex flex-col h-screen max-w-screen-lg px-4 sm:px-8">
+      <FormContactMe />
+      <Footer />
     </div>
   );
 }
