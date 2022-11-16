@@ -1,12 +1,12 @@
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 function NavItem({ namaItem, linkItem, functionHandler }) {
   return (
-    <Link onClick={functionHandler} to={linkItem}>
+    <HashLink smooth onClick={functionHandler} to={linkItem}>
       <div className="group">
         <span className="group-hover:text-darkbrown ">{namaItem}</span>
       </div>
-    </Link>
+    </HashLink>
   );
 }
 

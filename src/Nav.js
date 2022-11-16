@@ -11,7 +11,6 @@ function Nav() {
       return;
     }
     setNavBar(!navBar);
-    console.log(navBar);
   }
 
   return (
@@ -52,11 +51,6 @@ function Nav() {
           functionHandler={handlerNavBar}
           namaItem="Contact Me"
           linkItem={"/portofolio/ContactMe"}
-        />
-        <NavItem
-          functionHandler={handlerNavBar}
-          namaItem="My Work"
-          linkItem={"/portofolio/"}
         />
       </div>
     </nav>

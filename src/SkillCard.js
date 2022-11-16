@@ -1,6 +1,6 @@
 function SkillCard({ Logo, Judul, Desc, Tools }) {
   return (
-    <div className="bg-darkbrown rounded-xl flex flex-col items-center sm:p-8 py-8 px-4 space-y-8 max-w-xs">
+    <div className="border-darkbrownblack border-4 bg-darkbrown rounded-xl flex flex-col items-center sm:p-8 py-8 px-4 space-y-8 max-w-xs">
       <div className="flex flex-col gap-4 items-center">
         <img alt="" src={Logo} />
         <h2 className="font-extrabold text-xl">{Judul}</h2>

@@ -68,7 +68,7 @@ function FormContactMe() {
         <textarea
           name="isi"
           placeholder="Aku ingin bekerja sama, kira kira bisa kapan?"
-          className="p-4 h-48 font-coba rounded-xl mb-4"
+          className="resize-none p-4 h-48 font-coba rounded-xl mb-4"
           type="text"
         />
         <button
