@@ -77,7 +77,7 @@ function WorkSelectedCard({
         )}
       </a>
       <div className="rounded-xl bg-blackbrown w-full h-full opacity-50 absolute top-0 left-0 z-10 pointer-events-none"></div>
-      <div className=" border-none flex flex-col items-center md:border-solid md:border-darkbrownblack md:border-4 md:max-w-lg bg-darkbrown static md:absolute md:bottom-12 md:right-12 rounded-xl rounded-t-none sm:rounded-t-xl px-4 py-8 sm:px-8 sm:py-6 z-10">
+      <div className="hover:opacity-0 duration-300 ease-out border-none flex flex-col items-center md:border-solid md:border-darkbrownblack md:border-4 md:max-w-lg bg-darkbrown static md:absolute md:bottom-12 md:right-12 rounded-xl rounded-t-none sm:rounded-t-xl px-4 py-8 sm:px-8 sm:py-6 z-10">
         <h1 className="static text-center text-2xl sm:text-lg font-bold md:absolute -top-10 right-8 text-whitebrown ">
           Membangun {namaPekerjaan}
         </h1>
@@ -89,7 +89,7 @@ function WorkSelectedCard({
             <span>{tanggalPekerjaanBerakhir.getFullYear()}</span>
           </p>
         </div>
-        <p className="text-center">{Desc}</p>
+        <p className="text-center md:text-right">{Desc}</p>
       </div>
       <div className="w-full flex flex-row max-w-screen-lg relative rounded-xl rounded-b-none md:rounded-b-xl overflow-hidden">
         {image.map((img, i) => (

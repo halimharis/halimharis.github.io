@@ -30,6 +30,15 @@ const workData = () => {
         images["LaprAppWireframe.png"],
       ],
     },
+    {
+      id: 3,
+      namaPekerjaan: "API Recipe Meal",
+      tanggalPekerjaanMulai: new Date("2022-03-25"),
+      tanggalPekerjaanBerakhir: new Date("2022-04-25"),
+      tag: ["Front-End", "Website", "Tailwind", "API", "Done"],
+      Desc: "Ini adalah project setelah menjalankan roadmap dari Dicoding Front-End Developer, saya berhasil menyambungkan API dari website Meal API untuk ditampilkan dengan search dan category filter",
+      image: [images["MealProject.png"], images["MealProject2.png"]],
+    },
   ];
 };
 
