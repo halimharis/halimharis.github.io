@@ -1,5 +1,6 @@
 import React, { createRef, useEffect, useState } from "react";
 import { BsArrowLeftShort } from "react-icons/bs";
+import { ImSphere } from "react-icons/im";
 
 function WorkSelectedCard({
   namaPekerjaan,
@@ -41,7 +42,7 @@ function WorkSelectedCard({
       setTimeout(function () {
         document.getElementById("main").classList.add("scale-100");
       }, 100);
-      setTimeout(nextImage, 5000);
+      nextImage();
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
     []
@@ -55,7 +56,7 @@ function WorkSelectedCard({
   return (
     <div
       id="main"
-      className="scale-0 relative rounded-2xl ease-out duration-300 transition-all origin-top-left border-4 border-darkbrownblack"
+      className="flex flex-col-reverse mx-8 lg:mx-0 scale-0 relative rounded-2xl ease-out duration-300 transition-all origin-top-left border-4 border-darkbrownblack"
     >
       <button
         onClick={closeButtonHandler}
@@ -69,22 +70,28 @@ function WorkSelectedCard({
         rel="noopener noreferrer"
         className="-top-6 left-28 absolute z-20 flex border-darkbrownblack border-4 bg-darkbrown py-2 px-4 rounded-xl hover:text-whitebrown"
       >
-        Kunjungi Websitenya
+        {window.innerWidth < 640 ? (
+          <ImSphere className="text-2xl" />
+        ) : (
+          <span>Kunjungi Websitenya</span>
+        )}
       </a>
       <div className="rounded-xl bg-blackbrown w-full h-full opacity-50 absolute top-0 left-0 z-10 pointer-events-none"></div>
-      <div className="border-darkbrownblack border-4 max-w-lg bg-darkbrown absolute bottom-12 right-12 rounded-lg px-8 py-6 z-10">
-        <h1 className="text-lg font-bold absolute -top-10 right-8 text-whitebrown">
+      <div className=" border-none flex flex-col items-center md:border-solid md:border-darkbrownblack md:border-4 md:max-w-lg bg-darkbrown static md:absolute md:bottom-12 md:right-12 rounded-xl rounded-t-none sm:rounded-t-xl px-4 py-8 sm:px-8 sm:py-6 z-10">
+        <h1 className="static text-center text-2xl sm:text-lg font-bold md:absolute -top-10 right-8 text-whitebrown ">
           Membangun {namaPekerjaan}
         </h1>
-        <div className="flex space-x-4 absolute -bottom-8 right-8 text-whitebrown">
-          {tag.map((tag) => {
-            return <span key={tag}>{tag}</span>;
-          })}
-          <span>{tanggalPekerjaanBerakhir.getFullYear()}</span>
+        <div className="static flex space-x-4 md:absolute -bottom-8 right-8 text-whitebrown">
+          <p className="text-center">
+            {tag.map((tag) => {
+              return <span key={tag}>{tag} </span>;
+            })}
+            <span>{tanggalPekerjaanBerakhir.getFullYear()}</span>
+          </p>
         </div>
-        <p className="text-right">{Desc}</p>
+        <p className="text-center">{Desc}</p>
       </div>
-      <div className="w-full flex flex-row max-w-screen-lg relative rounded-xl overflow-hidden">
+      <div className="w-full flex flex-row max-w-screen-lg relative rounded-xl rounded-b-none md:rounded-b-xl overflow-hidden">
         {image.map((img, i) => (
           <div
             onClick={nextImage}

@@ -10,14 +10,14 @@ function WorkCard({ Judul, Desc, BackgroundImage, onClickWorkCard }) {
         src={BackgroundImage}
         alt=""
       />
-      <div className="absolute opacity-20 group-hover:opacity-95 bg-darkbrown h-full w-full top-0 left-0 z-0"></div>
-      <div className="opacity-0 group-hover:opacity-100 mb-12 z-10">
+      <div className="absolute opacity-100 md:opacity-20 group-hover:opacity-95 bg-darkbrown h-full w-full top-0 left-0 z-0"></div>
+      <div className="opacity-100 md:opacity-0 group-hover:opacity-100 mb-12 z-10 ease-in-out duration-500">
         <h2 className="text-lg font-bold">{Judul}</h2>
         <p className="line-clamp-3 sm:line-clamp-5">{Desc}</p>
       </div>
       <button
         onClick={onClickWorkCard}
-        className=" border-darkbrownblack border-2 gap-2 py-1 px-4 rounded-md opacity-0 group-hover:opacity-100 w-max self-end z-10 flex flex-row items-center hover:text-whitebrown hover:bg-darkbrownblack"
+        className="opacity-100 ease-in-out duration-500 border-darkbrownblack border-2 gap-2 py-1 px-4 rounded-md md:opacity-0 group-hover:opacity-100 w-max self-end z-10 flex flex-row items-center hover:text-whitebrown hover:bg-darkbrownblack"
       >
         View Work
         <VscArrowRight className="text-xl" />
