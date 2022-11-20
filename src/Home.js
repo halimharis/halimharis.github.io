@@ -121,7 +121,7 @@ function Home() {
           judul="Tertarik untuk bekerja bersama?"
         />
         <Link
-          to={"/portofolio/ContactMe"}
+          to={"ContactMe"}
           className="text-blackbrown flex lg:text-xl gap-4 border-2 border-blackbrown items-center py-2 px-4 lg:px-8 rounded-xl hover:bg-darkbrown hover:text-whitebrown hover:border-darkbrown"
         >
           <BiMessageDetail className="text-xl lg:text-2xl" />

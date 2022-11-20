@@ -45,12 +45,12 @@ function Nav() {
         <NavItem
           functionHandler={handlerNavBar}
           namaItem="Home"
-          linkItem={"/portofolio/"}
+          linkItem={"/"}
         />
         <NavItem
           functionHandler={handlerNavBar}
           namaItem="Contact Me"
-          linkItem={"/portofolio/ContactMe"}
+          linkItem={"/ContactMe"}
         />
       </div>
     </nav>
