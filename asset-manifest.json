@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.bf46baf7.css",
-    "main.js": "/static/js/main.148b8ba8.js",
+    "main.css": "/static/css/main.126c6f90.css",
+    "main.js": "/static/js/main.2d61bc54.js",
     "static/media/ifelseWebsiteGallery.png": "/static/media/ifelseWebsiteGallery.56d9f8fd06d82cae60c8.png",
     "static/media/MealProject2.png": "/static/media/MealProject2.012c3f3cde573f425e28.png",
     "static/media/MealProject.png": "/static/media/MealProject.545f6e240e505c44bf72.png",
@@ -24,11 +24,11 @@
     "static/media/reactLogo.png": "/static/media/reactLogo.ef20e673b9282f8f30fd.png",
     "static/media/JSlogo.png": "/static/media/JSlogo.266bd9fb2663dcc057b4.png",
     "index.html": "/index.html",
-    "main.bf46baf7.css.map": "/static/css/main.bf46baf7.css.map",
-    "main.148b8ba8.js.map": "/static/js/main.148b8ba8.js.map"
+    "main.126c6f90.css.map": "/static/css/main.126c6f90.css.map",
+    "main.2d61bc54.js.map": "/static/js/main.2d61bc54.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf46baf7.css",
-    "static/js/main.148b8ba8.js"
+    "static/css/main.126c6f90.css",
+    "static/js/main.2d61bc54.js"
   ]
 }
