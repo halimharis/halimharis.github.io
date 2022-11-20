@@ -25,7 +25,7 @@ function Home() {
     <>
       <div className=" min-h-screen flex flex-col justify-center items-center space-y-24 max-w-screen-lg px-4 sm:px-8">
         <Penjelasan
-          judul="Designer sekaligus coder"
+          judul="LAGI DICOBA BROW"
           isi={
             "Selamat datang di portofolioku disini aku akan share tentang diriku beserta semua hasil karya dan kerjaku sampai saat ini"
           }
