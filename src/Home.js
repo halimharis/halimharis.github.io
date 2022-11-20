@@ -9,6 +9,7 @@ import { useState } from "react";
 import workData from "./WorkData";
 import WorkSelectedCard from "./WorkSelectedCard";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function Home() {
   const [listOfWork] = useState(workData);
@@ -23,7 +24,7 @@ function Home() {
 
   return (
     <>
-      <div className=" min-h-screen flex flex-col justify-center items-center space-y-24 max-w-screen-lg px-4 sm:px-8">
+      <motion.div className=" min-h-screen flex flex-col justify-center items-center space-y-24 max-w-screen-lg px-4 sm:px-8">
         <Penjelasan
           judul="Designer sekaligus coder"
           isi={
@@ -31,13 +32,27 @@ function Home() {
           }
         />
 
-        <img
+        <motion.img
+          initial={{ y: "-200px", opacity: 0 }}
+          animate={{
+            height: "16rem",
+            width: "16rem",
+            y: "0",
+            opacity: 1,
+          }}
+          transition={{ delay: 1.2 }}
           alt=""
           src={images["Profile_Icon2.png"]}
-          className="h-48 lg:h-64 w-48 lg:w-64 mb-8"
+          className="h-48 w-48 mb-8"
         />
-      </div>
-      <section className="mt-24">
+      </motion.div>
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.2, duration: 1 }}
+        viewport={{ once: true }}
+        className="mt-24"
+      >
         <PenjelasanKecil
           judul="Halo Semuanya~"
           isi="Namaku adalah Abdul Haris Halim, biasanya teman temanku memanggilku Halim. Aku adalah seorang Mahasiswa yang sedang menjalani kuliah di Universitas Brawijaya, beberapa skill yang kupunya adalah desain dan front-end website developer"
@@ -65,7 +80,7 @@ function Home() {
             Desc="Aku dapat membuat struktur konten, design pattern, dan design interaksi dalam sebuah aplikasi berbasis website"
           />
         </div>
-      </section>
+      </motion.section>
       <section
         id="#checkpointWork"
         className="flex flex-col items-center mt-48 "
@@ -76,18 +91,26 @@ function Home() {
         />
         {selectedWorkCard === null ? (
           <div className="mt-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mx-12 gap-8">
-            {listOfWork.map((work) => {
+            {listOfWork.map((work, index) => {
               return (
-                <WorkCard
+                <motion.div
+                  initial={{ opacity: 0, x: "-200px" }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.4 * index, duration: 1 }}
+                  viewport={{ once: true }}
                   key={work.id}
-                  Judul={work.namaPekerjaan}
-                  Desc={work.Desc}
-                  BackgroundImage={work.image[0]}
-                  onClickWorkCard={workCardButtonClicked.bind(
-                    this,
-                    work.namaPekerjaan
-                  )}
-                />
+                >
+                  <WorkCard
+                    key={work.id}
+                    Judul={work.namaPekerjaan}
+                    Desc={work.Desc}
+                    BackgroundImage={work.image[0]}
+                    onClickWorkCard={workCardButtonClicked.bind(
+                      this,
+                      work.namaPekerjaan
+                    )}
+                  />
+                </motion.div>
               );
             })}
           </div>
@@ -122,7 +145,7 @@ function Home() {
         />
         <Link
           to={"ContactMe"}
-          className="text-blackbrown flex lg:text-xl gap-4 border-2 border-blackbrown items-center py-2 px-4 lg:px-8 rounded-xl hover:bg-darkbrown hover:text-whitebrown hover:border-darkbrown"
+          className="hover:scale-110 duration-300 text-blackbrown flex lg:text-xl gap-4 border-2 border-blackbrown items-center py-2 px-4 lg:px-8 rounded-xl hover:bg-darkbrown hover:text-whitebrown hover:border-darkbrown"
         >
           <BiMessageDetail className="text-xl lg:text-2xl" />
           Kirim Email Sekarang Juga
