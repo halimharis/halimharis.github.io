@@ -5,6 +5,7 @@ import { ImSphere } from "react-icons/im";
 function WorkSelectedCard({
   namaPekerjaan,
   tanggalPekerjaanMulai,
+  URL,
   tanggalPekerjaanBerakhir,
   Desc,
   image,
@@ -65,7 +66,7 @@ function WorkSelectedCard({
         <BsArrowLeftShort className="text-2xl" />
       </button>
       <a
-        href="https://ifelse.ub.ac.id/home"
+        href={URL}
         target="_blank"
         rel="noopener noreferrer"
         className="-top-6 left-28 absolute z-20 flex border-darkbrownblack border-4 bg-darkbrown py-2 px-4 rounded-xl hover:text-whitebrown"
