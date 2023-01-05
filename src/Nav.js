@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import NavItem from "./NavItem";
@@ -16,7 +15,7 @@ function Nav() {
   return (
     <nav className="flex w-full items-center justify-between py-4 max-w-screen-lg absolute px-8">
       <span className="text-xl font-extrabold">
-        <Link to={"/portofolio"}>Halim</Link>
+        <Link to={"/"}>Halim</Link>
       </span>
       <div onClick={handlerNavBar} className={`block sm:hidden space-y-1 z-20`}>
         <div

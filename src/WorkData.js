@@ -42,6 +42,21 @@ const workData = () => {
       Desc: "This is a project after running the roadmap from Dicoding Front-End Developer, I managed to connect the API from the Meal API website to be displayed with search and category filters",
       image: [images["MealProject.png"], images["MealProject2.png"]],
     },
+    {
+      id: 4,
+      namaPekerjaan: "Super Notes",
+      tanggalPekerjaanMulai: new Date("2022-03-25"),
+      tanggalPekerjaanBerakhir: new Date("2022-04-25"),
+      URL: "https://super-notes-project.netlify.app",
+      tag: ["Front-End", "Website", "API", "Done"],
+      Desc: "This is a project after running the roadmap from Dicoding React Developer, Besides successfully connecting the provided API, I also managed to use the Context API to manage existing states together with local storage, and React Hooks.",
+      image: [
+        images["supernote1.png"],
+        images["supernote2.png"],
+        images["supernote3.png"],
+        images["supernote4.png"],
+      ],
+    },
   ];
 };
 
