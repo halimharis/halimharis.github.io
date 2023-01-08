@@ -48,6 +48,11 @@ function Nav() {
         />
         <NavItem
           functionHandler={handlerNavBar}
+          namaItem="About Me"
+          linkItem={"/AboutMe"}
+        />
+        <NavItem
+          functionHandler={handlerNavBar}
           namaItem="Contact Me"
           linkItem={"/ContactMe"}
         />

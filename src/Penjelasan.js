@@ -1,6 +1,16 @@
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 function Penjelasan({ judul, isi }) {
+  const [replay, setReplay] = useState(true);
+
+  useEffect(() => {
+    setReplay(!replay);
+    setTimeout(() => {
+      setReplay(true);
+    }, 1000);
+  }, [isi]);
+
   const words = judul.split(" ");
   return (
     <div className="">
@@ -26,9 +36,9 @@ function Penjelasan({ judul, isi }) {
       </h1>
       <motion.p
         initial={{ y: "-32px", opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
+        animate={replay ? { y: 0, opacity: 1 } : { y: "-32px", opacity: 0 }}
         transition={{
-          delay: 1,
+          delay: 0,
           duration: 0.2,
           type: "spring",
           stiffness: 100,

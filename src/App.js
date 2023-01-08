@@ -4,6 +4,7 @@ import { Outlet } from "react-router-dom";
 import { motion, useScroll } from "framer-motion";
 import { useMemo, useState } from "react";
 import LanguageContext from "./context/languageContext";
+import Footer from "./Footer";
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -36,6 +37,8 @@ function App() {
         <main className="scroll-smooth font-coba bg-whitebrown flex flex-col items-center relative">
           <Nav />
           <Outlet />
+          <Footer />
+
           <button
             onClick={toggleLanguange}
             className="fixed bottom-4 right-4 px-4 py-2 rounded-md hover:font-bold"

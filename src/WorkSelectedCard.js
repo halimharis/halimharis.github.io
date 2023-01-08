@@ -21,7 +21,7 @@ function WorkSelectedCard({
 
   const scrollToImage = (i) => {
     setCurrentImage(i);
-    refs[i].current.scrollIntoView({
+    refs[i].current?.scrollIntoView({
       behavior: "smooth",
       block: "nearest",
       inline: "start",
@@ -43,7 +43,9 @@ function WorkSelectedCard({
       setTimeout(function () {
         document.getElementById("main").classList.add("scale-100");
       }, 100);
-      nextImage();
+      setTimeout(() => {
+        nextImage();
+      }, 3000);
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
     []

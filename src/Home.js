@@ -3,7 +3,6 @@ import PenjelasanKecil from "./PenjelasanKecil";
 import SkillCard from "./SkillCard";
 import WorkCard from "./WorkCard";
 import { BiMessageDetail } from "react-icons/bi";
-import Footer from "./Footer";
 import images from "./imageHandler";
 import { useContext, useState } from "react";
 import workData from "./WorkData";
@@ -11,6 +10,7 @@ import WorkSelectedCard from "./WorkSelectedCard";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import LanguageContext from "./context/languageContext";
+import { MdDesignServices } from "react-icons/md";
 
 function Home() {
   const [listOfWork] = useState(workData);
@@ -79,27 +79,25 @@ function Home() {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.7, duration: 0.5 }}
           viewport={{ once: true }}
-          className="mt-24 flex flex-col md:flex-row px-12 gap-12 justify-center items-center "
+          className="mt-24 flex flex-col items-center md:items-stretch md:flex-row justify-center gap-y-12 md:gap-x-8 lg:gap-x-12 max-w-screen-lg md:px-24 lg:px-36"
         >
           {language === "id" ? (
             <SkillCard
               Tools={[
-                images["FigjamLogo.png"],
-                images["FigmaLogo.png"],
-                images["UndrawLogo.png"],
-                images["FontAwesomeLogo.png"],
+                images["figma_skill_logo.png"],
+                images["maze_skill_image.png"],
+                images["miro_skill_iamge.png"],
               ]}
-              Logo={images["Designer_logo.png"]}
+              Logo={MdDesignServices}
               Judul="UI/UX Designer"
               Desc="Aku dapat membuat struktur konten, design pattern, dan design interaksi dalam sebuah aplikasi berbasis website"
             />
           ) : (
             <SkillCard
               Tools={[
-                images["FigjamLogo.png"],
-                images["FigmaLogo.png"],
-                images["UndrawLogo.png"],
-                images["FontAwesomeLogo.png"],
+                images["figma_skill_logo.png"],
+                images["maze_skill_image.png"],
+                images["miro_skill_iamge.png"],
               ]}
               Logo={images["Designer_logo.png"]}
               Judul="UI/UX Designer"
@@ -109,23 +107,29 @@ function Home() {
           {language === "id" ? (
             <SkillCard
               Tools={[
-                images["reactLogo.png"],
-                images["JSlogo.png"],
-                images["tailwindlogo.png"],
+                images["html_skill_logo.png"],
+                images["css_skill_image.png"],
+                images["javascript.svg"],
+                images["react_skill_logo.png"],
+                images["tailwind_skill_logo.png"],
+                images["redux_skill_logo.png"],
               ]}
               Logo={images["front-end_logo.png"]}
-              Judul="Front-End Web"
+              Judul="Front-End Developer"
               Desc="Aku dapat membuat struktur konten, design pattern, dan design interaksi dalam sebuah aplikasi berbasis website"
             />
           ) : (
             <SkillCard
               Tools={[
-                images["reactLogo.png"],
-                images["JSlogo.png"],
-                images["tailwindlogo.png"],
+                images["html_skill_logo.png"],
+                images["css_skill_image.png"],
+                images["javascript.svg"],
+                images["react_skill_logo.png"],
+                images["tailwind_skill_logo.png"],
+                images["redux_skill_logo.png"],
               ]}
               Logo={images["front-end_logo.png"]}
-              Judul="Front-End Web"
+              Judul="Front-End Developer"
               Desc="I can make structure content, design patterns, and design interactions in a web-based application"
             />
           )}
@@ -193,7 +197,6 @@ function Home() {
           // />
         )}
       </section>
-
       <section className="my-36 flex flex-col items-center gap-8 lg:gap-16">
         {language === "id" ? (
           <PenjelasanKecil
@@ -219,8 +222,6 @@ function Home() {
           <BiMessageDetail className="text-xl lg:text-2xl" />
         </Link>
       </section>
-
-      <Footer />
     </>
   );
 }

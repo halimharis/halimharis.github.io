@@ -1,15 +1,34 @@
+import { MdDesignServices } from "react-icons/md";
+import { TbBrowserCheck } from "react-icons/tb";
+
 function SkillCard({ Logo, Judul, Desc, Tools }) {
   return (
-    <div className="border-darkbrownblack border-4 self-stretch bg-darkbrown rounded-xl flex flex-col items-center sm:p-8 py-8 px-4 space-y-8 max-w-xs ">
+    <div className="w-5/6 md:w-1/2 border-darkbrownblack border-4 bg-darkbrown rounded-xl flex flex-col sm:p-8 py-8 px-4 space-y-8">
       <div className="flex flex-col gap-4 items-center">
-        <img alt="" src={Logo} />
-        <h2 className="font-extrabold text-xl">{Judul}</h2>
+        <span className="text-whitebrown text-8xl">
+          {Judul === "UI/UX Designer" ? (
+            <MdDesignServices />
+          ) : (
+            <TbBrowserCheck />
+          )}
+        </span>
+        <h2 className="font-extrabold text-xl text-whitebrown text-center">
+          {Judul}
+        </h2>
       </div>
-      <p className="text-center text-lg">{Desc}</p>
-      <div className="flex flex-wrap justify-center gap-2 py-8 mx-4 ">
+      <p className="text-center text-md text-whitebrown h-full opacity-80 ">
+        {Desc}
+      </p>
+      <div className="flex flex-wrap justify-center gap-2 py-4 ">
         {Tools.map((tool, index) => {
           return (
-            <img alt="" className="h-12 rounded-lg" key={index} src={tool} />
+            <div
+              key={index}
+              className="h-16 w-16 rounded-full bg-whitebrown flex justify-center items-center"
+            >
+              <img src={tool} alt="" className="h-8 w-8" />
+            </div>
+            // <img alt="" className="h-12 rounded-lg" key={index} src={tool} />
           );
         })}
       </div>

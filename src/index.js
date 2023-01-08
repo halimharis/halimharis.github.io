@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import AboutMe from "./AboutMe";
 import App from "./App";
 import ContactMe from "./ContactMe";
 import Home from "./Home";
@@ -13,6 +14,7 @@ root.render(
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />
+          <Route path="AboutMe" element={<AboutMe />} />
           <Route path="ContactMe" element={<ContactMe />} />
         </Route>
         <Route path="*" element={<NotFoundPage />} />
