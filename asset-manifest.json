@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.5ec64b3f.css",
-    "main.js": "/static/js/main.c20debbc.js",
+    "main.css": "/static/css/main.bcf0d36c.css",
+    "main.js": "/static/js/main.a87477b4.js",
     "static/media/ifelseWebsiteGallery.png": "/static/media/ifelseWebsiteGallery.56d9f8fd06d82cae60c8.png",
+    "static/media/universitasbrwajiaya.png": "/static/media/universitasbrwajiaya.4790f87c5c52fbc2173e.png",
     "static/media/MealProject2.png": "/static/media/MealProject2.012c3f3cde573f425e28.png",
     "static/media/MealProject.png": "/static/media/MealProject.545f6e240e505c44bf72.png",
     "static/media/ifelseWebsiteTugas.png": "/static/media/ifelseWebsiteTugas.52c3a3d28cc0dcf595db.png",
@@ -10,25 +11,35 @@
     "static/media/ifelseWebsite.png": "/static/media/ifelseWebsite.5bcca4bd3a6e5086233f.png",
     "static/media/LaprAppMockup2.png": "/static/media/LaprAppMockup2.c5374826792e52a7439b.png",
     "static/media/UndrawLogo.png": "/static/media/UndrawLogo.73c34758c2004f01b78c.png",
+    "static/media/brawijaya_logo.jpg": "/static/media/brawijaya_logo.df21261cde9cafd13ab5.jpg",
     "static/media/FigjamLogo.png": "/static/media/FigjamLogo.74a79ed5a0f535dc2bc7.png",
     "static/media/testing.jpg": "/static/media/testing.202f99e8ab641379770e.jpg",
     "static/media/Profile_Icon.png": "/static/media/Profile_Icon.e610b221006e7af75af1.png",
     "static/media/LaprAppMockup.png": "/static/media/LaprAppMockup.9d544ead9514151691f8.png",
+    "static/media/supernote4.png": "/static/media/supernote4.faed8934e8c177358074.png",
+    "static/media/supernote2.png": "/static/media/supernote2.56e28615a4bf4236107f.png",
+    "static/media/tailwind_skill_logo.png": "/static/media/tailwind_skill_logo.9c2e5bcf4f97d73e438e.png",
     "static/media/LaprApp.png": "/static/media/LaprApp.aaae7367e72130f5f438.png",
     "static/media/LaprAppWireframe.png": "/static/media/LaprAppWireframe.e56b591284a42cab40f1.png",
     "static/media/mailbox.png": "/static/media/mailbox.26d26679d6f0fa1cab69.png",
+    "static/media/supernote3.png": "/static/media/supernote3.8a95ac7d524c6d06e5a4.png",
+    "static/media/supernote1.png": "/static/media/supernote1.f3efb46a5db402142b7a.png",
     "static/media/Profile_Icon2.png": "/static/media/Profile_Icon2.cfcd5031a250b4fda3cb.png",
+    "static/media/react_skill_logo.png": "/static/media/react_skill_logo.b73dd04fa34d8db49f8c.png",
     "static/media/tailwindlogo.png": "/static/media/tailwindlogo.5411208dd7bb9722460d.png",
     "static/media/FontAwesomeLogo.png": "/static/media/FontAwesomeLogo.8caa2dab96549a0a7653.png",
+    "static/media/figma_skill_logo.png": "/static/media/figma_skill_logo.77364ce81dd70ed4afd7.png",
     "static/media/FigmaLogo.png": "/static/media/FigmaLogo.4c8a8a3a35aae14779bb.png",
+    "static/media/redux_skill_logo.png": "/static/media/redux_skill_logo.b3b939c66aecf7d53967.png",
     "static/media/reactLogo.png": "/static/media/reactLogo.ef20e673b9282f8f30fd.png",
     "static/media/JSlogo.png": "/static/media/JSlogo.266bd9fb2663dcc057b4.png",
     "index.html": "/index.html",
-    "main.5ec64b3f.css.map": "/static/css/main.5ec64b3f.css.map",
-    "main.c20debbc.js.map": "/static/js/main.c20debbc.js.map"
+    "static/media/javascript.svg": "/static/media/javascript.5cdf208aa200a1a4a51c.svg",
+    "main.bcf0d36c.css.map": "/static/css/main.bcf0d36c.css.map",
+    "main.a87477b4.js.map": "/static/js/main.a87477b4.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ec64b3f.css",
-    "static/js/main.c20debbc.js"
+    "static/css/main.bcf0d36c.css",
+    "static/js/main.a87477b4.js"
   ]
 }
