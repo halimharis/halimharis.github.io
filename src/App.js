@@ -41,9 +41,9 @@ function App() {
 
           <button
             onClick={toggleLanguange}
-            className="fixed bottom-4 right-4 px-4 py-2 rounded-md hover:font-bold"
+            className="fixed bottom-4 right-4 sm:bottom-8 sm:right-8 text-whitebrown hover:text-darkbrown px-3 py-1 rounded-xl border-2 border-darkbrown bg-darkbrown hover:bg-whitebrown"
           >
-            {language === "id" ? "ID" : "EN"}
+            {language === "id" ? "IND" : "ENG"}
           </button>
         </main>
       </LanguageContext.Provider>

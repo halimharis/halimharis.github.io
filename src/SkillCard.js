@@ -5,7 +5,7 @@ function SkillCard({ Logo, Judul, Desc, Tools }) {
   return (
     <div className="w-5/6 md:w-1/2 border-darkbrownblack border-4 bg-darkbrown rounded-xl flex flex-col sm:p-8 py-8 px-4 space-y-8">
       <div className="flex flex-col gap-4 items-center">
-        <span className="text-whitebrown text-8xl">
+        <span className="text-whitebrown text-7xl">
           {Judul === "UI/UX Designer" ? (
             <MdDesignServices />
           ) : (

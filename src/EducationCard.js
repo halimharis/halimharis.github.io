@@ -1,8 +1,25 @@
 import React from "react";
+import { motion } from "framer-motion";
 
-export default function EducationCard({ place, field, desc, year, image }) {
+export default function EducationCard({
+  place,
+  field,
+  desc,
+  year,
+  image,
+  index,
+}) {
   return (
-    <div className="relative w-4/5 sm:w-3/5 lg:w-1/3 flex flex-col border-2 border-black rounded-3xl px-10 pt-16 bg-lightbrown">
+    <motion.div
+      initial={{ y: "-100px", opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{
+        delay: 1.5 * index * 0.6,
+        duration: 0.5,
+      }}
+      viewport={{ once: true }}
+      className="relative w-4/5 sm:w-3/5 lg:w-1/3 flex flex-col border-2 border-black rounded-3xl px-10 pt-16 bg-lightbrown"
+    >
       <div className="flex flex-col">
         <h1 className="text-lg font-bold text-darkbrownblack text-center md:text-left">
           {place}
@@ -22,6 +39,6 @@ export default function EducationCard({ place, field, desc, year, image }) {
       <p className=" font-bold my-8 text-darkbrownblack self-center md:self-end ">
         {year}
       </p>
-    </div>
+    </motion.div>
   );
 }
