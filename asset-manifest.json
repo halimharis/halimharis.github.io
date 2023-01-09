@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.bcf0d36c.css",
-    "main.js": "/static/js/main.a87477b4.js",
+    "main.css": "/static/css/main.7ac6d631.css",
+    "main.js": "/static/js/main.20cb64e5.js",
     "static/media/ifelseWebsiteGallery.png": "/static/media/ifelseWebsiteGallery.56d9f8fd06d82cae60c8.png",
     "static/media/universitasbrwajiaya.png": "/static/media/universitasbrwajiaya.4790f87c5c52fbc2173e.png",
     "static/media/MealProject2.png": "/static/media/MealProject2.012c3f3cde573f425e28.png",
@@ -9,16 +9,19 @@
     "static/media/ifelseWebsiteTugas.png": "/static/media/ifelseWebsiteTugas.52c3a3d28cc0dcf595db.png",
     "static/media/ifelseWebsiteTugas2.png": "/static/media/ifelseWebsiteTugas2.9a340f15813a7ab41bec.png",
     "static/media/ifelseWebsite.png": "/static/media/ifelseWebsite.5bcca4bd3a6e5086233f.png",
+    "static/media/portofiolio_images1.png": "/static/media/portofiolio_images1.1fe1855000a4ed74a5f9.png",
     "static/media/LaprAppMockup2.png": "/static/media/LaprAppMockup2.c5374826792e52a7439b.png",
     "static/media/UndrawLogo.png": "/static/media/UndrawLogo.73c34758c2004f01b78c.png",
     "static/media/brawijaya_logo.jpg": "/static/media/brawijaya_logo.df21261cde9cafd13ab5.jpg",
     "static/media/FigjamLogo.png": "/static/media/FigjamLogo.74a79ed5a0f535dc2bc7.png",
     "static/media/testing.jpg": "/static/media/testing.202f99e8ab641379770e.jpg",
     "static/media/Profile_Icon.png": "/static/media/Profile_Icon.e610b221006e7af75af1.png",
+    "static/media/portofiolio_images2.png": "/static/media/portofiolio_images2.7ed16ddbdb22264310f7.png",
     "static/media/LaprAppMockup.png": "/static/media/LaprAppMockup.9d544ead9514151691f8.png",
     "static/media/supernote4.png": "/static/media/supernote4.faed8934e8c177358074.png",
     "static/media/supernote2.png": "/static/media/supernote2.56e28615a4bf4236107f.png",
     "static/media/tailwind_skill_logo.png": "/static/media/tailwind_skill_logo.9c2e5bcf4f97d73e438e.png",
+    "static/media/portofiolio_images.png": "/static/media/portofiolio_images.f8bc9b4ba6d92153e942.png",
     "static/media/LaprApp.png": "/static/media/LaprApp.aaae7367e72130f5f438.png",
     "static/media/LaprAppWireframe.png": "/static/media/LaprAppWireframe.e56b591284a42cab40f1.png",
     "static/media/mailbox.png": "/static/media/mailbox.26d26679d6f0fa1cab69.png",
@@ -35,11 +38,11 @@
     "static/media/JSlogo.png": "/static/media/JSlogo.266bd9fb2663dcc057b4.png",
     "index.html": "/index.html",
     "static/media/javascript.svg": "/static/media/javascript.5cdf208aa200a1a4a51c.svg",
-    "main.bcf0d36c.css.map": "/static/css/main.bcf0d36c.css.map",
-    "main.a87477b4.js.map": "/static/js/main.a87477b4.js.map"
+    "main.7ac6d631.css.map": "/static/css/main.7ac6d631.css.map",
+    "main.20cb64e5.js.map": "/static/js/main.20cb64e5.js.map"
   },
   "entrypoints": [
-    "static/css/main.bcf0d36c.css",
-    "static/js/main.a87477b4.js"
+    "static/css/main.7ac6d631.css",
+    "static/js/main.20cb64e5.js"
   ]
 }
