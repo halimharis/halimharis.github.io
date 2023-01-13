@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.7ac6d631.css",
-    "main.js": "/static/js/main.20cb64e5.js",
+    "main.css": "/static/css/main.3155871b.css",
+    "main.js": "/static/js/main.bdf53deb.js",
     "static/media/ifelseWebsiteGallery.png": "/static/media/ifelseWebsiteGallery.56d9f8fd06d82cae60c8.png",
     "static/media/universitasbrwajiaya.png": "/static/media/universitasbrwajiaya.4790f87c5c52fbc2173e.png",
     "static/media/MealProject2.png": "/static/media/MealProject2.012c3f3cde573f425e28.png",
@@ -38,11 +38,11 @@
     "static/media/JSlogo.png": "/static/media/JSlogo.266bd9fb2663dcc057b4.png",
     "index.html": "/index.html",
     "static/media/javascript.svg": "/static/media/javascript.5cdf208aa200a1a4a51c.svg",
-    "main.7ac6d631.css.map": "/static/css/main.7ac6d631.css.map",
-    "main.20cb64e5.js.map": "/static/js/main.20cb64e5.js.map"
+    "main.3155871b.css.map": "/static/css/main.3155871b.css.map",
+    "main.bdf53deb.js.map": "/static/js/main.bdf53deb.js.map"
   },
   "entrypoints": [
-    "static/css/main.7ac6d631.css",
-    "static/js/main.20cb64e5.js"
+    "static/css/main.3155871b.css",
+    "static/js/main.bdf53deb.js"
   ]
 }
