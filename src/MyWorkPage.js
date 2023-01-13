@@ -1,61 +1,103 @@
-import { useEffect } from "react";
-import images from "./imageHandler";
-
-//
+import { useContext, useState } from "react";
+import WorkCard from "./WorkCard";
+import { motion } from "framer-motion";
+import workData from "./WorkData";
+import LanguageContext from "./context/languageContext";
 
 function MyWorkPage() {
-  useEffect(() => {
-    const carousel = document.getElementById("halo");
-    if (carousel != null) {
-      carousel.addEventListener("wheel", (event) => {
-        carousel.scrollLeft += event.deltaY * 0.2;
-        event.preventDefault();
-      });
-    }
-  }, []);
+  const [works] = useState(workData);
+  const [list, setList] = useState("FE");
+  const { language } = useContext(LanguageContext);
 
+  const onOptionChange = (e) => {
+    setList(e.target.value);
+  };
   return (
-    <div className="flex flex-col mt-16 max-w-screen-lg w-screen overflow-hidden">
-      <section className="w-full relative">
-        <img src={images["ifelseWebsite.png"]} alt="" className="w-full" />
-        <div className="flex flex-col text-whitebrown justify-center items-center bg-blackbrown w-full absolute h-full top-0 left-0 opacity-80">
-          <h1 className="text-lg sm:text-4xl font-extrabold">
-            IFELSE WEBSITE 2022
-          </h1>
-          <p className="text-base sm:text-xl opacity-80">
-            Website untuk masa pengenalan mahasiswa baru
-          </p>
+    <div className="min-h-screen mt-24 lg:mt-48 flex flex-col items-center">
+      <div className="max-w-sm flex flex-col text-center gap-4">
+        <h1 className="text-2xl font-bold">
+          {language === "en"
+            ? "Completed Projects"
+            : "Proyek Yang Telah Selesai"}
+        </h1>
+        <div>
+          {language === "en"
+            ? "These are all the projects I've done since exploring as a Front-End Developer or UI/UX Designer"
+            : "Ini semua proyek yang telah saya lakukan sejak mendalami Front-End Developer dan UI/UX Designer"}
         </div>
-      </section>
-      <section className="flex flex-col text-left mt-12 space-y-2 mx-8">
-        <h1 className="text-2xl font-extrabold">Apa sih ini?</h1>
-        <p>
-          If Else adalah sebuah kegiatan yang diadakan oleh Himpunan Mahasiswa
-          Teknik Informatika untuk mengenalkan lingkungan sekolah kepada
-          mahasiswa baru, atau biasanya dikenal juga sebagai ospek prodi
-        </p>
-      </section>
-      <section className="flex flex-row items-center border my-24">
-        <section className="flex flex-col text-left space-y-2 mx-8">
-          <h1 className="text-2xl font-extrabold">
-            Apa yang kukerjakan disini?
-          </h1>
-          <h2 className="">Product Manager</h2>
-          <li>Riset tentang kebutuhan yang ada di website</li>
-          <li>Testing Fungsionalitas yang sudah dibuat dari developer</li>
-          <h2>Front End Developer</h2>
-          <li>Melakukan kodingan pada dashboard dari admin website tersebut</li>
-        </section>
-        <section
-          id="halo"
-          className="h-80 w-full flex flex-col overflow-x-scroll items-center relative scrollbar-hide"
-        >
-          <div className="flex flex-nowrap space-x-4 snap-x">
-            <div className="bg-darkbrown h-80 w-64">1</div>
-            <div className="bg-darkbrown h-80 w-64">2</div>
-          </div>
-        </section>
-      </section>
+      </div>
+      <div className="flex flex-col justify-center mt-24 relative">
+        <div className="flex justify-center">
+          <input
+            type="radio"
+            name="list"
+            value="FE"
+            id="FE"
+            checked={list === "FE"}
+            onChange={onOptionChange}
+            className="appearance-none peer/FE "
+          />
+          <label
+            htmlFor="FE"
+            className="w-24 text-center py-2 px-4 after:bg-darkbrown after:w-full after:h-1 after:absolute relative after:-bottom-2 after:right-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform peer-checked/FE:after:scale-x-100"
+          >
+            FE
+          </label>
+          <input
+            type="radio"
+            name="list"
+            value="UI/UX"
+            id="UI/UX"
+            checked={list === "UI/UX"}
+            onChange={onOptionChange}
+            className="appearance-none peer/UIUX "
+          />
+          <label
+            htmlFor="UI/UX"
+            className="w-24 text-center py-2 px-4 after:bg-darkbrown after:w-full after:h-1 after:absolute relative after:-bottom-2 after:right-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform peer-checked/UIUX:after:scale-x-100"
+          >
+            UI/UX
+          </label>
+        </div>
+
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mx-12 mb-24">
+          {works.map((work, index) => {
+            return (
+              <motion.div
+                initial={{ opacity: 0, x: "-200px" }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.3 * index, duration: 0.5 }}
+                viewport={{ once: true }}
+                key={work.id}
+              >
+                {list === "FE"
+                  ? work.FE && (
+                      <WorkCard
+                        key={work.id}
+                        Judul={work.namaPekerjaan}
+                        Desc={work.Desc}
+                        BackgroundImage={work.image[0]}
+                        onClickWorkCard={() => {
+                          console.log(this.key);
+                        }}
+                      />
+                    )
+                  : work.UIUX && (
+                      <WorkCard
+                        key={work.id}
+                        Judul={work.namaPekerjaan}
+                        Desc={work.Desc}
+                        BackgroundImage={work.image[0]}
+                        onClickWorkCard={() => {
+                          console.log(this.key);
+                        }}
+                      />
+                    )}
+              </motion.div>
+            );
+          })}
+        </div>
+      </div>
     </div>
   );
 }

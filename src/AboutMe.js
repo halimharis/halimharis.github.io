@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { FiArrowUpRight } from "react-icons/fi";
 import { AiFillLinkedin } from "react-icons/ai";
 import EducationCard from "./EducationCard";
@@ -111,30 +111,36 @@ export default function AboutMe() {
               : "Dari mengikuti Dicoding Front-End maupun ReactJS roadmap dan berbagai Kepanitiaan di Universitas Brawijaya saya berhasil menyelesaikan lebih dari 3 project sebagai Front-End Developer dengan menggunakan React"}
           </motion.p>
           <div className="flex gap-x-4 mt-8 justify-center md:justify-start">
-            <motion.button
+            <motion.a
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{
                 delay: 2,
                 duration: 0,
               }}
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://drive.google.com/file/d/1twELGdoKx4PISwC5gg2UmvZ3usVMZjyC/view?usp=sharing"
               className="py-3 px-6 flex items-center gap-4 rounded-md bg-darkbrown text-white hover:text-blackbrown hover:border-darkbrownblack border-2 border-darkbrown"
             >
               Resume
               <FiArrowUpRight />
-            </motion.button>
-            <motion.button
+            </motion.a>
+            <motion.a
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{
                 delay: 2.5,
                 duration: 0,
               }}
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://www.linkedin.com/in/halimharis"
               className="flex gap-4 items-center border-2 border-lightbrown text-darkbrown px-6 hover:border-darkbrownblack rounded-md hover:text-darkbrownblack"
             >
               LinkedIn
               <AiFillLinkedin />
-            </motion.button>
+            </motion.a>
           </div>
         </div>
         <motion.img
@@ -144,13 +150,13 @@ export default function AboutMe() {
             delay: 3,
             duration: 0.5,
           }}
-          src="https://picsum.photos/400/600"
+          src={images["Profile_Icon2.png"]}
           alt=""
-          className="h-80 w-80 rounded-full border-2 border-darkbrownblack"
+          className="h-80 w-80 rounded-full"
         />
       </div>
       <div className="flex flex-col items-center mb-8 relative w-screen mt-24 md:mt-0">
-        <div className="bg-coba1 w-screen absolute h-[28rem] "></div>
+        <div className="bg-coba1 w-full absolute h-[28rem] "></div>
         <h1 className="text-4xl font-bold z-10 mt-20 text-whitebrown">
           {Education.map((char, index) => (
             <motion.span

@@ -11,6 +11,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import LanguageContext from "./context/languageContext";
 import { MdDesignServices } from "react-icons/md";
+import { TbBrowserCheck } from "react-icons/tb";
 
 function Home() {
   const [listOfWork] = useState(workData);
@@ -88,9 +89,9 @@ function Home() {
                 images["maze_skill_image.png"],
                 images["miro_skill_iamge.png"],
               ]}
-              Logo={MdDesignServices}
+              Logo={<MdDesignServices />}
               Judul="UI/UX Designer"
-              Desc="Aku dapat membuat struktur konten, design pattern, dan design interaksi dalam sebuah aplikasi berbasis website"
+              Desc="aku dapat menyelesaikan masalah dengan melakukan desain produk berdasarkan requirement yang ada dengan mengutamakan fungsionalitas dan aksesibilitasnya"
             />
           ) : (
             <SkillCard
@@ -99,9 +100,9 @@ function Home() {
                 images["maze_skill_image.png"],
                 images["miro_skill_iamge.png"],
               ]}
-              Logo={images["Designer_logo.png"]}
+              Logo={<MdDesignServices />}
               Judul="UI/UX Designer"
-              Desc="Aku dapat membuat struktur konten, design pattern, dan design interaksi dalam sebuah aplikasi berbasis website"
+              Desc="I can solve problems by doing product designs based on existing requirements by prioritizing functionality and accessibility"
             />
           )}
           {language === "id" ? (
@@ -114,7 +115,7 @@ function Home() {
                 images["tailwind_skill_logo.png"],
                 images["redux_skill_logo.png"],
               ]}
-              Logo={images["front-end_logo.png"]}
+              Logo={<TbBrowserCheck />}
               Judul="Front-End Developer"
               Desc="Aku dapat membuat struktur konten, design pattern, dan design interaksi dalam sebuah aplikasi berbasis website"
             />
@@ -128,7 +129,7 @@ function Home() {
                 images["tailwind_skill_logo.png"],
                 images["redux_skill_logo.png"],
               ]}
-              Logo={images["front-end_logo.png"]}
+              Logo={<TbBrowserCheck />}
               Judul="Front-End Developer"
               Desc="I can make structure content, design patterns, and design interactions in a web-based application"
             />
@@ -152,8 +153,9 @@ function Home() {
         )}
 
         {selectedWorkCard === null ? (
-          <div className="mt-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mx-12 gap-8">
+          <div className="mt-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mx-12 ">
             {listOfWork.map((work, index) => {
+              if (index >= 3) return;
               return (
                 <motion.div
                   initial={{ opacity: 0, x: "-200px" }}
@@ -185,16 +187,6 @@ function Home() {
               }}
             />
           </div>
-          // <WorkCard
-          //   key={selectedWorkCard.id}
-          //   Judul={selectedWorkCard.namePekerjaan}
-          //   Desc={selectedWorkCard.Desc}
-          //   BackgroundImage={selectedWorkCard.image}
-          //   onClickWorkCard={workCardButtonClicked.bind(
-          //     this,
-          //     selectedWorkCard.namePekerjaan
-          //   )}
-          // />
         )}
       </section>
       <section className="my-36 flex flex-col items-center gap-8 lg:gap-16">

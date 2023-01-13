@@ -8,6 +8,8 @@ const workData = () => {
       tanggalPekerjaanMulai: new Date("2022-03-25"),
       tanggalPekerjaanBerakhir: new Date("2022-04-25"),
       URL: "https://ifelse.ub.ac.id/home",
+      FE: true,
+      UIUX: false,
       tag: ["Front-End", "Website", "Bootstrap", "OnGoing"],
       Desc: "If Else is an activity held by the Informatics Engineering Student Association to introduce the school environment to new students, or usually known as Study Orientation and Introduction to Study Program Campus (Ospek Prodi).",
       image: [
@@ -23,6 +25,8 @@ const workData = () => {
       tanggalPekerjaanMulai: new Date("2022-03-25"),
       tanggalPekerjaanBerakhir: new Date("2022-04-25"),
       URL: "/",
+      FE: true,
+      UIUX: false,
       tag: ["Front-End", "Website", "Tailwind", "React", "React Context"],
       Desc: "This website explains everything about me, I make this website every 3 weeks apart from maintaining my coding skills as well as trying various other new libraries, this website also represents my ability to use react and various other libraries in the world of Frontend Web Developer",
       image: [
@@ -37,6 +41,8 @@ const workData = () => {
       tanggalPekerjaanMulai: new Date("2022-03-25"),
       tanggalPekerjaanBerakhir: new Date("2022-04-25"),
       URL: "https://meal-api-project.netlify.app/",
+      FE: true,
+      UIUX: false,
       tag: ["Front-End", "Website", "Tailwind", "API", "Done"],
       Desc: "This is a project after running the roadmap from Dicoding Front-End Developer, I managed to connect the API from the Meal API website to be displayed with search and category filters",
       image: [images["MealProject.png"], images["MealProject2.png"]],
@@ -47,6 +53,8 @@ const workData = () => {
       tanggalPekerjaanMulai: new Date("2022-03-25"),
       tanggalPekerjaanBerakhir: new Date("2022-04-25"),
       URL: "https://super-notes-project.netlify.app",
+      FE: true,
+      UIUX: false,
       tag: ["Front-End", "Website", "API", "Done"],
       Desc: "This is a project after running the roadmap from Dicoding React Developer, Besides successfully connecting the provided API, I also managed to use the Context API to manage existing states together with local storage, and React Hooks.",
       image: [
@@ -62,6 +70,8 @@ const workData = () => {
       tanggalPekerjaanMulai: new Date("2022-03-25"),
       tanggalPekerjaanBerakhir: new Date("2022-04-25"),
       URL: "/",
+      FE: false,
+      UIUX: true,
       tag: ["UIUX", "Mobile App", "Figma", "Done"],
       Desc: "Lapr is an application design for self-service services in a restaurant or food court, this design is made using figma, this application will solve problems in queues at restaurants and orders at food courts",
       image: [

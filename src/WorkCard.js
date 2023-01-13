@@ -3,7 +3,7 @@ import { VscArrowRight } from "react-icons/vsc";
 function WorkCard({ Judul, Desc, BackgroundImage, onClickWorkCard }) {
   return (
     <div
-      className={`border-darkbrownblack border-4 group p-8 flex flex-col justify-between rounded-xl relative bg-cover min-w-fit max-w-xs text-darkbrownblack overflow-hidden`}
+      className={`mt-4 mx-2 border-darkbrownblack border-4 group p-8 flex flex-col justify-between rounded-xl relative bg-cover min-w-fit max-w-xs text-darkbrownblack overflow-hidden`}
     >
       <img
         className="absolute h-full w-full top-0 left-0 object-cover object-top"

@@ -1,8 +1,5 @@
 import { motion } from "framer-motion";
-import { AiOutlineWhatsApp } from "react-icons/ai";
-import { AiOutlineInstagram } from "react-icons/ai";
-import { AiOutlineFacebook } from "react-icons/ai";
-import { AiOutlineLinkedin } from "react-icons/ai";
+import { AiOutlineInstagram, AiOutlineLinkedin } from "react-icons/ai";
 
 function Footer() {
   return (
@@ -15,23 +12,12 @@ function Footer() {
       <span className="font-bold lg:text-xl">Created by Me</span>
       <div className="flex gap-4 text-3xl">
         <a
-          href="/"
-          className="hover:text-darkbrown hover:scale-125 duration-300 ease-in-out"
-        >
-          <AiOutlineFacebook />
-        </a>
-        <a
           href="https://www.instagram.com/halimmharis/"
           className="hover:text-darkbrown hover:scale-125 duration-300 ease-in-out"
         >
           <AiOutlineInstagram />
         </a>
-        <a
-          href="https://wa.me/6281289328639"
-          className="hover:text-darkbrown hover:scale-125 duration-300 ease-in-out"
-        >
-          <AiOutlineWhatsApp />
-        </a>
+
         <a
           href="www.linkedin.com/in/halimharis"
           className="hover:text-darkbrown hover:scale-125 duration-300 ease-in-out"

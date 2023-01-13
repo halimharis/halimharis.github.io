@@ -17,7 +17,7 @@ function Nav() {
       <span className="text-xl font-extrabold">
         <Link to={"/"}>Halim</Link>
       </span>
-      <div onClick={handlerNavBar} className={`block sm:hidden space-y-1 z-20`}>
+      <div onClick={handlerNavBar} className={`block sm:hidden space-y-1 z-40`}>
         <div
           className={`${
             navBar ? "rotate-45 translate-y-2" : "rotate-0"
@@ -37,7 +37,7 @@ function Nav() {
       <div
         className={`${
           navBar
-            ? "flex flex-col justify-center items-center space-y-8 fixed h-screen w-screen bg-darkbrown top-0 left-0 z-10"
+            ? "flex flex-col justify-center items-center space-y-8 fixed h-screen w-screen bg-darkbrown top-0 left-0 z-30"
             : "hidden"
         } space-x-0 sm:space-x-8 sm:flex duration-300 ease-in-out`}
       >
@@ -45,6 +45,11 @@ function Nav() {
           functionHandler={handlerNavBar}
           namaItem="Home"
           linkItem={"/"}
+        />
+        <NavItem
+          functionHandler={handlerNavBar}
+          namaItem="My Work"
+          linkItem={"/WorkList"}
         />
         <NavItem
           functionHandler={handlerNavBar}

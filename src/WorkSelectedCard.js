@@ -1,6 +1,7 @@
 import React, { createRef, useEffect, useState } from "react";
 import { BsArrowLeftShort } from "react-icons/bs";
 import { ImSphere } from "react-icons/im";
+import { FiArrowUpRight } from "react-icons/fi";
 
 function WorkSelectedCard({
   namaPekerjaan,
@@ -76,7 +77,10 @@ function WorkSelectedCard({
         {window.innerWidth < 640 ? (
           <ImSphere className="text-2xl" />
         ) : (
-          <span>Kunjungi Websitenya</span>
+          <span className="flex items-center gap-2">
+            Visit The Website
+            <FiArrowUpRight className="text-lg" />
+          </span>
         )}
       </a>
       <div className="rounded-xl bg-blackbrown w-full h-full opacity-50 absolute top-0 left-0 z-10 pointer-events-none"></div>
