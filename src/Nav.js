@@ -13,7 +13,7 @@ function Nav() {
   }
 
   return (
-    <nav className="flex w-full items-center justify-between py-4 max-w-screen-lg absolute px-8">
+    <nav className="flex w-full items-center justify-between py-4 max-w-screen-lg absolute px-8 z-10">
       <span className="text-xl font-extrabold">
         <Link to={"/"}>Halim</Link>
       </span>

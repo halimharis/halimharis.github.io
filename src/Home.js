@@ -6,8 +6,7 @@ import { BiMessageDetail } from "react-icons/bi";
 import images from "./imageHandler";
 import { useContext, useState } from "react";
 import workData from "./WorkData";
-import WorkSelectedCard from "./WorkSelectedCard";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import LanguageContext from "./context/languageContext";
 import { MdDesignServices } from "react-icons/md";
@@ -15,15 +14,9 @@ import { TbBrowserCheck } from "react-icons/tb";
 
 function Home() {
   const [listOfWork] = useState(workData);
-  const [selectedWorkCard, setSelectedWorkCard] = useState(null);
   const { language } = useContext(LanguageContext);
+  const nav = useNavigate();
 
-  function workCardButtonClicked(workName) {
-    const workCardClickedObj = listOfWork.filter(function (work) {
-      return work.namaPekerjaan === workName;
-    });
-    setSelectedWorkCard(workCardClickedObj[0]);
-  }
   return (
     <>
       <motion.div className=" min-h-screen flex flex-col justify-center items-center space-y-24 max-w-screen-lg px-4 sm:px-8">
@@ -151,43 +144,36 @@ function Home() {
             isi="Here some of my work since I started studying design and front-end website developers at Brawija University, several projects from the committee that I worked on and the final project of the lessons I studied"
           />
         )}
-
-        {selectedWorkCard === null ? (
-          <div className="mt-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mx-12 ">
-            {listOfWork.map((work, index) => {
-              if (index >= 3) return;
-              return (
-                <motion.div
-                  initial={{ opacity: 0, x: "-200px" }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.4 * index, duration: 1 }}
-                  viewport={{ once: true }}
+        <div className="mt-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mx-12 ">
+          {listOfWork.map((work, index) => {
+            if (index >= 3) return;
+            return (
+              <motion.div
+                initial={{ opacity: 0, x: "-200px" }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.4 * index, duration: 1 }}
+                viewport={{ once: true }}
+                key={work.id}
+              >
+                <WorkCard
                   key={work.id}
-                >
-                  <WorkCard
-                    key={work.id}
-                    Judul={work.namaPekerjaan}
-                    Desc={work.Desc}
-                    BackgroundImage={work.image[0]}
-                    onClickWorkCard={workCardButtonClicked.bind(
-                      this,
-                      work.namaPekerjaan
-                    )}
-                  />
-                </motion.div>
-              );
-            })}
-          </div>
-        ) : (
-          <div className="mt-24 w-full flex flex-col">
-            <WorkSelectedCard
-              {...selectedWorkCard}
-              onClickWorkCard={function () {
-                setSelectedWorkCard(null);
-              }}
-            />
-          </div>
-        )}
+                  Judul={work.namaPekerjaan}
+                  Desc={work.Desc}
+                  BackgroundImage={work.image[0]}
+                  onClickWorkCard={() => {
+                    nav(`WorkList/${work.id}`);
+                  }}
+                />
+              </motion.div>
+            );
+          })}
+        </div>
+        <Link
+          to={"WorkList"}
+          className="mt-16 self-center hover:scale-110 duration-300 text-blackbrown flex lg:text-xl gap-4 border-2 border-blackbrown items-center py-2 px-4 lg:px-8 rounded-xl hover:bg-darkbrown hover:text-whitebrown hover:border-darkbrown"
+        >
+          {language === "id" ? "Lihat Projek lainnya" : "See more Projects"}
+        </Link>
       </section>
       <section className="my-36 flex flex-col items-center gap-8 lg:gap-16">
         {language === "id" ? (

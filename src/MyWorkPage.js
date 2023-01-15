@@ -3,11 +3,13 @@ import WorkCard from "./WorkCard";
 import { motion } from "framer-motion";
 import workData from "./WorkData";
 import LanguageContext from "./context/languageContext";
+import { useNavigate } from "react-router-dom";
 
 function MyWorkPage() {
   const [works] = useState(workData);
   const [list, setList] = useState("FE");
   const { language } = useContext(LanguageContext);
+  const nav = useNavigate();
 
   const onOptionChange = (e) => {
     setList(e.target.value);
@@ -78,7 +80,7 @@ function MyWorkPage() {
                         Desc={work.Desc}
                         BackgroundImage={work.image[0]}
                         onClickWorkCard={() => {
-                          console.log(this.key);
+                          nav(`${work.id}`);
                         }}
                       />
                     )
@@ -89,7 +91,7 @@ function MyWorkPage() {
                         Desc={work.Desc}
                         BackgroundImage={work.image[0]}
                         onClickWorkCard={() => {
-                          console.log(this.key);
+                          nav(`${work.id}`);
                         }}
                       />
                     )}
