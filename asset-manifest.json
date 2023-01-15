@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.3155871b.css",
-    "main.js": "/static/js/main.bdf53deb.js",
+    "main.css": "/static/css/main.e50edcdb.css",
+    "main.js": "/static/js/main.bf8581fb.js",
     "static/media/ifelseWebsiteGallery.png": "/static/media/ifelseWebsiteGallery.56d9f8fd06d82cae60c8.png",
     "static/media/universitasbrwajiaya.png": "/static/media/universitasbrwajiaya.4790f87c5c52fbc2173e.png",
     "static/media/MealProject2.png": "/static/media/MealProject2.012c3f3cde573f425e28.png",
@@ -33,16 +33,20 @@
     "static/media/FontAwesomeLogo.png": "/static/media/FontAwesomeLogo.8caa2dab96549a0a7653.png",
     "static/media/figma_skill_logo.png": "/static/media/figma_skill_logo.77364ce81dd70ed4afd7.png",
     "static/media/FigmaLogo.png": "/static/media/FigmaLogo.4c8a8a3a35aae14779bb.png",
+    "static/media/visual-studio_logo.png": "/static/media/visual-studio_logo.0ee879f9428773c84715.png",
     "static/media/redux_skill_logo.png": "/static/media/redux_skill_logo.b3b939c66aecf7d53967.png",
+    "static/media/bootstrap_logo.png": "/static/media/bootstrap_logo.ccdc45afeabcb7b9c2de.png",
+    "static/media/rest_api_logo.jpg": "/static/media/rest_api_logo.7554c2c388ec185ee1d9.jpg",
     "static/media/reactLogo.png": "/static/media/reactLogo.ef20e673b9282f8f30fd.png",
     "static/media/JSlogo.png": "/static/media/JSlogo.266bd9fb2663dcc057b4.png",
+    "static/media/bootstrap_logo.svg": "/static/media/bootstrap_logo.bc0266681270dde544d8.svg",
     "index.html": "/index.html",
     "static/media/javascript.svg": "/static/media/javascript.5cdf208aa200a1a4a51c.svg",
-    "main.3155871b.css.map": "/static/css/main.3155871b.css.map",
-    "main.bdf53deb.js.map": "/static/js/main.bdf53deb.js.map"
+    "main.e50edcdb.css.map": "/static/css/main.e50edcdb.css.map",
+    "main.bf8581fb.js.map": "/static/js/main.bf8581fb.js.map"
   },
   "entrypoints": [
-    "static/css/main.3155871b.css",
-    "static/js/main.bdf53deb.js"
+    "static/css/main.e50edcdb.css",
+    "static/js/main.bf8581fb.js"
   ]
 }
